@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1EA896</color>
+    <color name="colorPrimaryDark">#188778</color>
+    <color name="colorAccent">#FF715B</color>
+    <color name="beige">#FFF9F4</color>
+    <color name="right_answer_green">#DAEDBD</color>
+</resources>

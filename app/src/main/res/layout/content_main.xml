@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/nav_button_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/def_margin"
+                android:layout_marginTop="@dimen/def_margin"
+                android:layout_marginEnd="@dimen/def_margin"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/ic_keyboard_arrow_left_white_24dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:paddingEnd="8dp"
+                android:text="Попередній"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/def_margin"
+                android:layout_marginEnd="@dimen/def_margin"
+                android:layout_marginRight="@dimen/def_margin"
+                android:background="@color/colorAccent"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_white_24dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:paddingStart="8dp"
+                android:text="Наступний"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_button_previous"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@android:color/white"
+                android:padding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/task"
+                        style="@style/TextStyle"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:text="Правильний наголос в усіх словах рядка: "
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/task"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/letter1"
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_marginEnd="8dp"
+                            android:text="A" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/font_family_regular"
+                            android:text="Жоржина, машина, картошина" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/answer1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/letter2"
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_marginEnd="8dp"
+                            android:text="Б" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/font_family_regular"
+                            android:text="Бі бо бу" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/answer2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/letter3"
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_marginEnd="8dp"
+                            android:text="В" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/font_family_regular"
+                            android:text="Труляля, траляля" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/answer3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/letter4"
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_marginEnd="8dp"
+                            android:text="Г" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/font_family_regular"
+                            android:text="ЖОПА" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/answer4"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio"
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/radiobutton_selector"
+                            android:gravity="center"
+                            android:text="А" />
+
+                        <RadioButton
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/radiobutton_selector"
+                            android:gravity="center"
+                            android:text="Б" />
+
+                        <RadioButton
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/radiobutton_selector"
+                            android:gravity="center"
+                            android:text="В" />
+
+                        <RadioButton
+                            style="@style/TextStyle.BoldBlackTextStyle"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/radiobutton_selector"
+                            android:gravity="center"
+                            android:text="Г" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
