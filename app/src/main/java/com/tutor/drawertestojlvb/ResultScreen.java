@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ResultScreen extends AppCompatActivity {
 
-    private List<AnswerList> list = generateAnswerList;
+   // private List<AnswerList> list = generateAnswerList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,8 @@ public class ResultScreen extends AppCompatActivity {
 
         RecyclerView answerRecycler = findViewById(R.id.answers_recycler_view);
         answerRecycler.setLayoutManager(new LinearLayoutManager(this));
-        AnswerAdapter answerAdapter = new AnswerAdapter(list, this);
-        answerAdapter.setAdapter(answerAdapter);
+       // AnswerAdapter answerAdapter = new AnswerAdapter(list, this);
+        //answerAdapter.setAdapter(answerAdapter);
 
     }
 

@@ -16,7 +16,7 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.ViewHolder
     private AnswerItemClicked callback;
 
     AnswerAdapter(List<AnswerList> answerList,
-                  ResultScreen callback) {
+                  AnswerItemClicked callback) {
         this.answerList = answerList;
         this.callback = callback;
     }

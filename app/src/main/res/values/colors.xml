@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1EA896</color>
-    <color name="colorPrimaryDark">#188778</color>
-    <color name="colorAccent">#FF715B</color>
-    <color name="beige">#FFF9F4</color>
-    <color name="right_answer_green">#DAEDBD</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="lightGreen">#87D783</color>
+    <color name="darkGreen">#219179</color>
+    <color name="lightYellow">#FFFBBD</color>
+    <color name="macaroniAndCheese">#FFD289</color>
+    <color name="rightAnswerGreen">#D7FCD4</color>
+    <color name="wrongAnswerRed">#D7FCD4</color>
+    <color name="whiteSmoke">#F5F5F5</color>
 </resources>
